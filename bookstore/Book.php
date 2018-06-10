@@ -5,7 +5,7 @@
  * Date: 5/30/2018
  * Time: 4:39 PM
  */
-
+namespace Bookstore\Domain;
 
 class Book{
 
@@ -106,5 +106,8 @@ class Book{
         }
     }
 
+    public function addCopy(){
+        $this->available++;
+    }
 
 }
